@@ -1,2 +1,3 @@
 # youtube-page
 Desafio da DIO, criando uma página do youtube do 0, utilizando CSS e HTML.
+Foi realmente um desafio, não utilizei o chat GPT em nada, pois dessa vez, não adicionei JavaScript na página. Desde o HTML até o CSS, fiz totalmente do 0, tentando utilizar as classes para deixar o código mais compacto possível. Mesmo assim, o código ainda ficou grande, mas creio que seja normal no começo, e espero conseguir otimizar cada vez mais meus códigos. Não amo o CSS, mas ver o resultado final é gratificamente e animador. Seguirei para terminar a formação!!

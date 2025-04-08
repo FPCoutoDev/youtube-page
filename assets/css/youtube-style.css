@@ -1,0 +1,192 @@
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+    * {
+        box-sizing: border-box;
+      }
+    html body {
+        margin: 0;
+        background-color: whitesmoke;
+    }
+    .container {
+        display: grid;
+      
+        grid-template-areas:
+          "header header"
+          "main   nav";
+      
+        grid-template-columns: 1fr 370px;
+        grid-template-rows: auto auto;
+      }
+      img {
+        user-select: none;
+      }
+
+    /* começo do cabeçalho */
+    header {
+    position: sticky;
+    top: 0;
+    grid-area: header;
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    margin: 0;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    }
+    .head-icons {
+        height: 30px;
+        margin-right: 30px;
+    }
+    .profile-icons {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .pesquisar {
+        display: flex;
+    }
+    .pesquisar button img {
+        height: 25px;
+        width: auto;
+    }
+    .pesquisar button {
+        height: 35px;
+        width: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #pesquisar {
+        border: 1px solid rgb(186, 186, 186);
+        height: 35px;
+        width: 30vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /* fim do cabeçalho */ 
+    /* inicio do nav */
+    nav {
+        grid-area: nav;
+        margin-top: 30px;
+        margin-right: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .thumb {
+        display: flex;
+        gap: 10px;
+      }
+      .thumb .description {
+        align-items: normal;
+        justify-content: left;
+      }
+      .thumb .description h5 {
+        font-size: 11px;
+        padding-bottom: 5px;
+      }
+    .image-thumb {
+        width: 150px;
+    }
+/* fim do nav */
+    /* inicio da main */
+    iframe {
+        width: 800px;
+        height: 400;
+        
+      }
+    main {
+        grid-area: main;
+        display: flex;
+        padding-top: 30px;
+        padding-left: 60px;
+        flex-direction: column;
+        padding-right: 40px;
+      }
+      #buttons {
+        display: flex;
+        flex-direction:row;
+        gap: 10px;
+        align-items: center;
+        justify-content: space-between;
+      }
+      #buttons #subscribe {
+        background-color: red;
+        color: white;
+        border: 0 solid black;
+        height: 30px;
+        width: 110px;
+        text-transform: uppercase;
+        font-size: 10px;
+        border-radius: 3px;
+        
+      }
+    #buttons #subscribe:hover {
+    cursor: pointer;
+    background-color: rgb(156, 5, 5);
+    }
+      .description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+      }
+    .description h5 {
+        margin: 0;
+        padding-top: 2px;
+      }
+      .view {
+        font-size: 10px;
+        color: grey;
+        margin-top: 3px;
+        margin-left: 5px;
+      }
+      #party {
+        display: flex;
+      }
+      .interact {
+        padding: 10px;
+        height: 35px;
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        gap: 5px;
+        border: 0 solid white;
+        background-color: transparent;
+      }
+      .interact img {
+        height: 15px;
+      }
+      .interact:hover {
+        background-color: rgb(216, 216, 216);
+        border-radius: 10px;
+      }
+      #description {
+        margin-top: 20px;
+        width: 500px;
+        gap: 30px;
+        padding: 10px;
+      }
+      #description:hover {
+        background-color: rgb(223, 223, 223);
+        cursor: pointer;
+        border-radius: 4px;
+      }
+      #description .view {
+        font-size: 12px;
+      }
+      #description .description {
+        align-items: normal;
+        justify-content: left;
+        margin-bottom: 10px;
+      }
+/* fim do main */
